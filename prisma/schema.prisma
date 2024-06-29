@@ -1,0 +1,12 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://shikharmutta0:6hTxHQRSMshgEx6t@odoocombat.txqtuam.mongodb.net/odoo?retryWrites=true"
+}
+
+model person {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
